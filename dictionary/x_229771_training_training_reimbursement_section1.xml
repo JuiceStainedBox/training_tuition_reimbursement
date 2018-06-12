@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="training_reimbursement_section1" max_length="40" name="x_229771_training_training_reimbursement_section1" type="collection">
+        <element label="Method of Payment" max_length="40" name="u_boolean_5" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Approved/Not Approved" mandatory="true" max_length="40" name="u_choice_31" type="string">
+            <choice>
+                <element label="Approved" sequence="0" value="approved"/>
+                <element label="Not Approved" sequence="1" value="not approved"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Method of Payment" mandatory="true" max_length="40" name="u_choice_6" type="string">
+            <choice>
+                <element label="I am receiving financial assistance (Post 9/11 GI Bill)" sequence="0" value="I am receiving financial assistance (Post 9/11 GI Bill)"/>
+                <element label="I am not receiving financial assistance (Post 9/11 GI Bill)" sequence="1" value="I am not receiving financial assistance (Post 9/11 GI Bill)"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="Estimated Cost" mandatory="true" max_length="20" name="u_currency_10" type="currency"/>
+        <element label="New Field Name" max_length="80" name="u_field_name_15" type="field_name"/>
+        <element label="Date of Course" max_length="40" name="u_glide_date_24" type="glide_date"/>
+        <element label="Date of Course" max_length="40" name="u_glide_date_25" type="glide_date"/>
+        <element label="Date of Request" mandatory="true" max_length="40" name="u_glide_date_3" type="glide_date"/>
+        <element label="Employee Signature Date" mandatory="true" max_length="40" name="u_glide_date_30" type="glide_date"/>
+        <element label="Date" mandatory="true" max_length="40" name="u_glide_date_34" type="glide_date"/>
+        <element label="Date of Course" mandatory="true" max_length="40" name="u_glide_date_8" type="glide_date"/>
+        <element label="Hours of Training/Exam" max_length="40" name="u_glide_time_21" type="glide_time"/>
+        <element label="Hours of Training/Exam" mandatory="true" max_length="40" name="u_glide_time_22" type="glide_time"/>
+        <element label="Hours of Training/Exam" max_length="40" name="u_glide_time_23" type="glide_time"/>
+        <element label="Employee Signature" mandatory="true" max_length="65536" name="u_html_29" type="html"/>
+        <element label="HR/Training Signature" mandatory="true" max_length="65536" name="u_html_33" type="html"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Estimated Cost" mandatory="true" max_length="20" name="u_price_16" type="price"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Estimated Cost" max_length="20" name="u_price_26" type="price"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Estimated Cost" max_length="20" name="u_price_27" type="price"/>
+        <element label="Signature" mandatory="true" max_length="32" name="u_reference_14" reference="asmt_signature" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Justification" mandatory="true" max_length="40" name="u_string_11" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Course 2 TItle" max_length="40" name="u_string_17" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Justification" max_length="40" name="u_string_18" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Justification" max_length="40" name="u_string_19" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Full Name" mandatory="true" max_length="40" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Course 3 Title" max_length="40" name="u_string_20" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Approver Comments/Charge Code" mandatory="true" max_length="40" name="u_string_32" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="School" mandatory="true" max_length="40" name="u_string_4" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Course 1 Title" mandatory="true" max_length="40" name="u_string_7" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Hours of Training/Exam" mandatory="true" max_length="40" name="u_string_9" type="string"/>
+        <element attributes="base_start=true" label="Signature" max_length="80" name="u_table_name_12" type="table_name"/>
+        <index name="index">
+            <element name="u_reference_14"/>
+        </index>
+    </element>
+</database>
